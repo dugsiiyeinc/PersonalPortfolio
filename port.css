@@ -97,3 +97,9 @@
      color: #57606f;
  }
 
+  @media (max-width: 992px) {
+     .work-grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
