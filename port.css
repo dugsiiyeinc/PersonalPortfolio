@@ -102,4 +102,14 @@
          grid-template-columns: repeat(2, 1fr);
      }
  }
+ @media (max-width: 600px) {
+     .work-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .project-card {
+         max-width: 400px;
+         margin: 0 auto;
+     }
+ }
 
