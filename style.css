@@ -214,6 +214,46 @@ body {
   transform: translateY(-2px);
 }
 
+.footer {
+  background: #181920;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #a0a0ba;
+  margin: 0;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: #a0a0ba;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
 
 
 /* Tablets */
