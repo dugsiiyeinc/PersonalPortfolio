@@ -1,0 +1,146 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     background-color: #F2F2F2;
+     color: white;
+     overflow-x: hidden;
+ }
+  .container {
+     max-width: 1400px;
+     margin: 0 auto;
+ }
+  .section-header {
+     text-align: center;
+     margin-bottom: 50px;
+ }
+  .section-header h2 {
+     font-size: 56px;
+     font-weight: 600;
+     color: #441869;
+     margin-bottom: 10px;
+ }
+  .divider {
+     width: 50px;
+     height: 4px;
+     background: #6b46c1;
+     margin: 0 auto;
+     border-radius: 2px;
+ }
+.contact-section {
+     position: relative;
+     padding: 100px 20px;
+     background: linear-gradient(135deg, #4834d4, #686de0, #95afc0);
+     color: white;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.contact-container {
+     position: relative;
+     z-index: 2;
+     max-width: 800px;
+     width: 100%;
+ }
+.contact-intro {
+    max-width: 600px;
+    margin: 20px auto 40px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.submit-btn {
+    background: #686de0;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+.submit-btn:hover {
+    background: #4834d4;
+    transform: translateY(-2px);
+}
+/* --- Media Queries Tablet and Mobile---*/
+@media (max-width: 992px) {
+    .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ @media (max-width: 768px) {
+    .form-row {
+       grid-template-columns: 1fr;
+ }
+
+.contact-section {
+    padding: 60px 20px;
+ }
+
+}
+ @media (max-width: 600px) {
+     .work-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .project-card {
+         max-width: 400px;
+         margin: 0 auto;
+     }
+ }
+
